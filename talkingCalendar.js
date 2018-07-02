@@ -43,8 +43,19 @@ var talkingCalendar = function(date) {
   var day = parseInt(components[2], 10);
 
   var monthString = convertMonth(month);
+  var dayString;
 
-  return monthString + " " + day + ", " + year;
+  if (day === 1 || day === 21 || day === 31) {
+    dayString = day + "st";
+  } else if (day === 2 || day === 22) {
+    dayString = day + "nd";
+  } else if (day === 3 || day === 23) {
+    dayString = day + 'rd';
+  } else {
+    dayString = day + 'th';
+  }
+
+  return monthString + " " + dayString + ", " + year;
 };
 
 console.log(talkingCalendar("2017/12/02"));
