@@ -77,4 +77,15 @@ foo("a");
 
 ## Code Demo
 
+[See here](talkingCalendar.js)
+
 ## Paired Programming
+
+- Reasoning:
+  - Gives better code quality, two pairs of eyes on the code before it goes out
+  - Allows developers to share knowledge of how features are being developed.
+- Roles:
+  - Driver: Is writing the code, thinking about syntax and structure
+  - Navigator: Is thinking about the big picture, what are the things that are coming up
+
+
